@@ -14,18 +14,7 @@ app.use(cors());
 
 app.use("/auth", userRouter);
 
-// mongoose.connect(`${MONGO_URL}`, (err) => {
-//   if (err) {
-//     console.log(err.message);
-//   } else {
-//     console.log("Connected to database");
-//   }
-// });
-
-mongoose.connect(
-  // `mongodb+srv://quizer:easypassword@quizify.cg0zyp9.mongodb.net/quizify?retryWrites=true&w=majority`
-  MONGO_URL
-);
+mongoose.connect(MONGO_URL);
 
 app.listen(PORT, () => {
   console.log(MONGO_URL);
