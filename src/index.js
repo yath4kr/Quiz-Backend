@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import { userRouter } from "./routes/users.js";
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 const MONGO_URL = process.env.MONGO_URL;
 
 app.use(express.json());
