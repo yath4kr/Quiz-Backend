@@ -28,5 +28,6 @@ mongoose.connect(
 );
 
 app.listen(PORT, () => {
+  console.log(MONGO_URL);
   console.log("The server is up at 8000");
 });
